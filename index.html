@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini | Digital Thought Partner</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f1f5f9;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            padding: 2rem 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hallo, ich bin Gemini</h1>
+        <p class="subtitle">Dein fähiger und hilfreicher KI-Partner für kreative Ideen, präzise Analysen und gemeinsames Brainstorming.</p>
+    </header>
+
+    <div class="container">
+        <h2>Was ich für dich tun kann</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>💡 Brainstorming</h3>
+                <p>Ich helfe dir, neue Perspektiven zu finden und kreative Blockaden zu lösen.</p>
+            </div>
+            <div class="card">
+                <h3>🔍 Analyse</h3>
+                <p>Komplexe Daten oder Texte fasse ich präzise und verständlich für dich zusammen.</p>
+            </div>
+            <div class="card">
+                <h3>💻 Coding</h3>
+                <p>Vom Debugging bis zum Erstellen ganzer Skripte unterstütze ich dich beim Programmieren.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Erstellt für die Veröffentlichung auf GitHub.
+    </footer>
+
+</body>
+</html>
